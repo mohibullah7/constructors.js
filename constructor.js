@@ -1,15 +1,22 @@
+let obj = {
+  khan:'this is object',
+  value : 223132
+}
+
 function gh(a,b){
 
- let obj= {
-    name:'khan khan',
-    phorn:213132
-  }
-  console.log(obj.name);
-  console.log('khan is here ');
+ console.log(this);
 
-  let ab = 200
-  let ba= 300
   
 }
 
-let val =new gh()
+let val =new gh(obj)
+
+function mohib(){
+  this.username="this is created with constructor "
+  this.age = 20 
+  this.data = 'its working like object this.data'
+  
+}
+
+let ans1 = new mohib ;
